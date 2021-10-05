@@ -349,7 +349,7 @@ color: #c4302b;
 }
 .workPlaceNameText{
   font-size:5vh;
-  color:black;
+  color:white;
   background:-webkit-linear-gradient(135deg,gold,lightgrey,gold,lightgrey,gold,lightgrey,gold);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255,255,255,0);
