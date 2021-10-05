@@ -10,7 +10,7 @@ html{
 }
 body{
   background-size: 100% ;
-  background: linear-gradient(180deg, rgba(128, 128, 128, 0) 2%, white 98%) no-repeat fixed;
+  background: white no-repeat fixed;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -299,13 +299,10 @@ transform: scale(1) rotate(0deg);
   height: 80px;
   width: 80px;
   transition: opacity 0.5s linear, text-shadow ease-in-out 150ms, display 0.5s linear ;
-font-size: 5vw;
+font-size: 3vw;
 }
 
-.socialMedias:hover{
-  margin-top: -6px;
-  text-shadow: -25px 25px 4px #ffffff;
-}
+
 
 .instagram{
   background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
@@ -331,12 +328,31 @@ color: #c4302b;
 
 
 
+.twitter:hover{
+  margin-top: -6px;
+  text-shadow: -25px 25px 4px rgba(0, 172, 238, 0.6);
+}
+
+.vk:hover{
+  margin-top: -6px;
+  text-shadow: -25px 25px 4px rgba(76, 117, 163, 0.6);
+}
+
+.youtube:hover{
+  margin-top: -6px;
+  text-shadow: -25px 25px 4px rgba(196, 48, 43, 0.6);
+}
+
+.instagram:hover{
+  margin-top: -6px;
+  text-shadow: -25px 25px 4px rgba(131, 58, 180, 0.6);
+}
 .workPlaceNameText{
   font-size:5vh;
   color:black;
-   background:-webkit-linear-gradient(135deg,gold,lightgrey,gold,lightgrey,gold,lightgrey,gold);
+  background:-webkit-linear-gradient(135deg,gold,lightgrey,gold,lightgrey,gold,lightgrey,gold);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: rgba(255,255,255,0);
   animation: text-animation 2s linear infinite ;
   background-size: 300% 100%;
   margin: 20px 20px 20px 60px;
@@ -436,22 +452,7 @@ animation: texting 2s infinite linear;
   padding: 5px;
 }
 
-#book{
-margin: 5% auto;
-  width: 800px;
-  height: 400px;
-}
 
-#book .turn-page{
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-}
-
-#book div{
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-}
 
 .portfolioWrapper{
   margin: 50px 50px;
@@ -546,8 +547,8 @@ display: flex;
 }
 
 .headerText{
-  font-family: fantasy;
-  font-size: 2vw;
+  font-family: 'Akronim', cursive;
+  font-size: 2.5vw;
 }
 
 .contactMe{
@@ -556,7 +557,34 @@ display: flex;
   justify-items: center;
 }
 
-@media screen and (max-width: 800px) {
+
+
+@media screen and (max-width: 1441px) {
+  .contactMe{
+  }
+  .socialMediaButton{
+    width: 162px;
+    height: 192px;
+  }
+}
+
+@media screen and (max-width: 1241px) {
+  .contactMe{
+  }
+  .socialMediaButton{
+    width: 142px;
+    height: 162px;
+  }
+  
+}
+
+@media screen and (max-width: 1161px) {
+  .socialMedias{
+    width:60px;
+  }
+}
+
+@media screen and (max-width: 801px) {
   .aboutMy{
     font-size: 1rem;
   }
@@ -569,32 +597,7 @@ display: flex;
 
 }
 
-@media screen and (max-width: 1440px) {
-  .contactMe{
-  }
-  .socialMediaButton{
-    width: 162px;
-    height: 192px;
-  }
-}
-
-@media screen and (max-width: 1240px) {
-  .contactMe{
-  }
-  .socialMediaButton{
-    width: 142px;
-    height: 162px;
-  }
-  
-}
-
-@media screen and (max-width: 1160px) {
-  .socialMedias{
-    width:60px;
-  }
-}
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 769px){
 .socialMediaButton{
   width: 122px;
   height: 132px;
@@ -611,7 +614,7 @@ display: flex;
   }
 }
 
-@media screen and (max-width: 532px) {
+@media screen and (max-width: 533px) {
   .aboutMy{
     font-size: 0.7rem;
   }
@@ -630,7 +633,7 @@ display: flex;
   }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 426px){
   .socialMediaButton{
     width: 102px;
     height: 102px;

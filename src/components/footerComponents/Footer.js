@@ -5,16 +5,16 @@ import React,{useState} from 'react';
 function Footer() {
     let [socialButton,setSocialButton]=useState("socialMediaProfile.svg")
     const [socialMediasVisible,setSocialMediasVisible]=useState("none")
-    let [applicationValue,setApplicationValue]=useState("")
-    const [clientOrder, setClientOrder] = useState("Order");
+    // let [applicationValue,setApplicationValue]=useState("")
+    // const [clientOrder, setClientOrder] = useState("Order");
 
-    const handleChange = (event) => {
-        setClientOrder(event.target.value)
-    }
-
-    function changeApplicationValue(event){
-        setApplicationValue(event.target.value)
-    }
+    // const handleChange = (event) => {
+    //     setClientOrder(event.target.value)
+    // }
+    //
+    // function changeApplicationValue(event){
+    //     setApplicationValue(event.target.value)
+    // }
     const styles={
         button:{
             border:"none",
@@ -111,13 +111,15 @@ function handleSearchSubmit(e){
 
         <div className="contactMe">
             <p style={{fontSize:"2vw",color:"white"}}>Связаться со мной:</p>
-            <span className="material-icons phone" style={{fontSize:"5vw"}}><a style={{color:"green"}} href="tel:+77756433496">call</a></span>
-            <span className="material-icons mail" style={{fontSize:"5vw"}}><a style={{color:"white"}} href="mailto:mr.ghnuma@gmail.com">email</a></span>
+            <span className="material-icons phone" style={{fontSize:"3vw"}}><a style={{color:"green"}} href="tel:+77756433496">call</a></span>
+            <span className="material-icons mail" style={{fontSize:"3vw"}}><a style={{color:"white"}} href="mailto:mr.ghnuma@gmail.com">email</a></span>
             <div id="Medias">
                 <a href="https://www.instagram.com/mr.ghnuma/" className="socialMedias fa fa-3x fa-instagram instagram" style={{display:socialMediasVisible}} />
                 <a href="https://twitter.com/Nurmukh28018713" className="socialMedias fa fa-3x fa-twitter twitter" style={{display:socialMediasVisible}} />
                 <a href="https://vk.com/numaom" className="socialMedias fa fa-3x fa-vk vk" style={{display:socialMediasVisible}} />
                 <a href="https://www.youtube.com/channel/UCe20AftYCky7i1CoLpP6lIw/playlists" className="socialMedias fa fa-3x fa-youtube youtube" style={{display:socialMediasVisible}} />
+
+
             </div>
             <img className="socialMediaButton" onClick={switchSocialMediaButton} src={socialButton} style={socialButtonStyle} alt="MagicButton"/>
         </div>

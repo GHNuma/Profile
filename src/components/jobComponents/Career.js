@@ -7,6 +7,8 @@ const [isOpen,setIsOpen]=useState(false)
 
 
     return (
+        <>
+
         <div className="workWrapper" style={{
             display: "flex",
             flexDirection: "column",
@@ -14,6 +16,7 @@ const [isOpen,setIsOpen]=useState(false)
             height: "100%",
             width: "100%"
         }}>
+
                     <div style={{display: "flex", justifyContent: "space-between"}}>
                         <button style={{border: 0}} className="workPlaceNameText"
                                 onClick={() => setIsOpen(true)}>{name}</button>
@@ -22,6 +25,8 @@ const [isOpen,setIsOpen]=useState(false)
                     </div>
 
         </div>
+            <span className="line"/>
+</>
     );
 }
 

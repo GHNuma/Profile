@@ -1,6 +1,7 @@
 import React from 'react';
 import $ from "jquery";
 import "turn.js";
+import "./book.css"
 
 class Book extends React.Component {
     static defaultProps = {
