@@ -67,3 +67,24 @@ ul{
     margin-left:5px;
     padding-top: 5px;
 }
+
+@media screen and (max-width: 768px) {
+    .menu__content a{
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 444px) {
+    .menu__content{
+        width: 40%;
+    }
+    .blur{
+        left:40%
+    }
+    .menu__content a{
+        font-size: 0.5rem;
+    }
+    .menu{
+        transform:translateX(-140%);
+    }
+}

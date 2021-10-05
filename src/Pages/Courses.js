@@ -1,66 +1,11 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Book from "../components/courseComponents/Book";
 import $ from "jquery";
 import "turn.js";
 
 function Courses (){
 
-let myCourses=[
-        {
-                id:1,
-                title:"Пройденные",
-                pages:[
-                        {
-                                img:"",
-                                description:""
-                        },
-                        {
-                                img:"",
-                                description:""
-                        },
-                        {
-                                img:"",
-                                description:""
-                        }
-                ]
-        },
-        {
-                id:2,
-                title:"В процессе изучения",
-                pages:[
-                        {
-                                img:"",
-                                description:""
-                        },
-                        {
-                                img:"",
-                                description:""
-                        },
-                        {
-                                img:"",
-                                description:""
-                        }
-                ]
-        },
-        {
-                id:3,
-                title:"Планируются",
-                pages:[
-                        {
-                                img:"",
-                                description:""
-                        },
-                        {
-                                img:"",
-                                description:""
-                        },
-                        {
-                                img:"",
-                                description:""
-                        }
-                ]
-        }
-]
+
 
         const options = {
                 width: 1500,
@@ -71,7 +16,7 @@ let myCourses=[
                 elevation: 50,
                 gradients: !$.isTouch,
                 when: {
-                        turned: function(e, page) {
+                        turned: function() {
                                 console.log("Current view: ", $(this).turn("view"));
                         }
                 }

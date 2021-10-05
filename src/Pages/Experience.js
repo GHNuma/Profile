@@ -40,7 +40,7 @@ function Experience (){
     ]);
 
     return (
-            <div style={{background:"rgba(0,0,0,0.9)",paddingTop:"3.5em"}}>
+            <div style={{background:"rgba(0,0,0,0.9)"}}>
                 {jobs.map(job => {
                    return <Career key={job.id} {...job} />
 

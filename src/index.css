@@ -133,7 +133,6 @@ nav{
 main{
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 40% 60%;
   z-index: 3;
   align-items: center;
   width: 80vw;
@@ -297,10 +296,10 @@ transform: scale(1) rotate(0deg);
 .socialMedias {
   display: flex;
   position: relative;
-  height: 60px;
-  width: 60px;
+  height: 80px;
+  width: 80px;
   transition: opacity 0.5s linear, text-shadow ease-in-out 150ms, display 0.5s linear ;
-
+font-size: 5vw;
 }
 
 .socialMedias:hover{
@@ -335,13 +334,11 @@ color: #c4302b;
 .workPlaceNameText{
   font-size:5vh;
   color:black;
-  /*background:-webkit-linear-gradient(135deg,white,grey,white,grey,white,grey,white);*/
    background:-webkit-linear-gradient(135deg,gold,lightgrey,gold,lightgrey,gold,lightgrey,gold);
-/*background:-webkit-linear-gradient(135deg,blue,red,blue,red,blue,red,blue);*/
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-animation: text-animation 2s linear infinite ;
-background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-animation 2s linear infinite ;
+  background-size: 300% 100%;
   margin: 20px 20px 20px 60px;
   cursor: pointer;
 }
@@ -461,7 +458,7 @@ margin: 5% auto;
 display: grid;
   grid-template-columns: 1fr 3fr;
   grid-column-gap: 5px;
-  height: 400px;
+  height: 600px;
 }
 
 .projectsBtn{
@@ -553,6 +550,12 @@ display: flex;
   font-size: 2vw;
 }
 
+.contactMe{
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
 @media screen and (max-width: 800px) {
   .aboutMy{
     font-size: 1rem;
@@ -566,14 +569,29 @@ display: flex;
 
 }
 
-@media screen and (max-width: 532px) {
-  .aboutMy{
-    font-size: 0.7rem;
+@media screen and (max-width: 1440px) {
+  .contactMe{
   }
-  #myInfoBorder{
-    height: 12vh;
+  .socialMediaButton{
+    width: 162px;
+    height: 192px;
   }
+}
 
+@media screen and (max-width: 1240px) {
+  .contactMe{
+  }
+  .socialMediaButton{
+    width: 142px;
+    height: 162px;
+  }
+  
+}
+
+@media screen and (max-width: 1160px) {
+  .socialMedias{
+    width:60px;
+  }
 }
 
 @media screen and (max-width: 768px){
@@ -581,6 +599,35 @@ display: flex;
   width: 122px;
   height: 132px;
 }
+  .socialMedias{
+    width:45px;
+    height:55px;
+  }
+  .header{
+    height: 40px;
+  }
+  .headerText{
+    font-size:3vw ;
+  }
+}
+
+@media screen and (max-width: 532px) {
+  .aboutMy{
+    font-size: 0.7rem;
+  }
+  #myInfoBorder{
+    height: 12vh;
+  }
+  .socialMedias{
+    width:30px;
+    height:40px;
+  }
+  .header{
+    height: 30px;
+  }
+  nav{
+    height: 25px;
+  }
 }
 
 @media screen and (max-width: 425px){
@@ -588,4 +635,20 @@ display: flex;
     width: 102px;
     height: 102px;
   }
+
+  .socialMedias{
+    font-size: 2rem;
+    width: 40px;
+  }
+  .header{
+    height: 25px;
+  }
+  .headerText{
+    font-size:4vw;
+  }
+  main{
+    height: 570px;
+  }
+
 }
+
