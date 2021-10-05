@@ -557,3 +557,10 @@ display: flex;
   }
 
 }
+
+@media screen and (max-width: 600px){
+
+.page-footer{
+  position: absolute;
+}
+}
