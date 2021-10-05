@@ -350,10 +350,7 @@ color: #c4302b;
 .workPlaceNameText{
   font-size:5vh;
   color:white;
-  background:-webkit-linear-gradient(135deg,gold,lightgrey,gold,lightgrey,gold,lightgrey,gold);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255,255,255,0);
-  animation: text-animation 2s linear infinite ;
+  background-color: rgb(25 25 25);
   background-size: 300% 100%;
   margin: 20px 20px 20px 60px;
   cursor: pointer;
@@ -655,3 +652,16 @@ display: flex;
 
 }
 
+@media screen and (min-width:767px) and (max-width:4000px)  {
+  .workPlaceNameText{
+    font-size:5vh;
+    color:black;
+    background:-webkit-linear-gradient(135deg,gold,lightgrey,gold,lightgrey,gold,lightgrey,gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text-animation 2s linear infinite ;
+    background-size: 300% 100%;
+    margin: 20px 20px 20px 60px;
+    cursor: pointer;
+  }
+}
