@@ -25,8 +25,7 @@ const [indexType,setIndexType]=useState(2)
     }
         return (
 
-            <div>
-                <h1 className={shadowStyle} onMouseOver={turnOnFullShadow} onMouseOut={turnOffFullShadow} style={{zIndex:indexType}}>Programmer</h1>
+            <>
 
                 {/*<header>*
                     <div id="welcomeText">
@@ -36,6 +35,7 @@ const [indexType,setIndexType]=useState(2)
                 </header>
                 ПЕРЕДУМАЛ ДЕЛАТЬ ТАКОЕ ДЕРЬМО*/}
                 <main >
+                    <h1 className={shadowStyle} onMouseOver={turnOnFullShadow} onMouseOut={turnOffFullShadow} style={{zIndex:indexType}}>Programmer</h1>
 
                         <div id="myInfoBorder" style={{visibility:infoVisibility}}>
 
@@ -45,15 +45,13 @@ const [indexType,setIndexType]=useState(2)
                         </div>
 
 
-                    <br/>
-                    <br/>
 
                     <Skills slides={Slides}/>
                     <img  id="myPhoto" onMouseOver={showInfo} onMouseOut={hideInfo} src="photoNuma.png" alt="Numa"/>
 
                 </main>
 
-            </div>
+            </>
         );
 }
 

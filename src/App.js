@@ -40,14 +40,15 @@ const App = ()=> {
     return(
         <>
             <Router>
-                        <nav style={{backgroundColor:"rgba(182,197,200,0.79)"}}>
+                <Header />
+
+                <nav>
 
                             <div className="burger-btn" onClick={()=>setMenuActive(!menuActive)}>
                                 <span/>
                             </div>
                             &nbsp;
                             &nbsp;
-                            <Header/>
                             <Menu active={menuActive} setActive={setMenuActive} header={"Меню"} items={items}/>
                         </nav>
 

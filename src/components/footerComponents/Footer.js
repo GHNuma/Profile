@@ -4,7 +4,7 @@ import React,{useState} from 'react';
 
 function Footer() {
     let [socialButton,setSocialButton]=useState("socialMediaProfile.svg")
-    const [socialMediasOpacity,setSocialMediasOpacity]=useState(0)
+    const [socialMediasVisible,setSocialMediasVisible]=useState("none")
     let [applicationValue,setApplicationValue]=useState("")
 
     function changeApplicationValue(event){
@@ -18,21 +18,18 @@ function Footer() {
             color:"white"
         },
         nonActiveButton:{
-            marginTop:"5vh",
             background:"linear-gradient(135deg,rgba(0,0,0,0.05),grey) ",
             borderRadius:"25%",
             border:"7px outset white",
             padding:"20px",
-            transition:"1s"
+
         },
         activeButton:{
-            marginTop:"5vh",
             background:"rgba(255,255,255,0.5)",
             borderRadius:"25%",
             border:"10px inset lightblue",
             padding:"20px",
             boxShadow:"0px 0px 50px 5px lightblue",
-            transition:"1s"
         }
     }
     let [socialButtonStyle,setSocialButtonStyle]=useState(styles.nonActiveButton)
@@ -43,13 +40,13 @@ function Footer() {
         if(socialButton==="socialMediaProfile.svg"){
             setSocialButton("socialMediaProfileOn.svg")
             setSocialButtonStyle(styles.activeButton)
-            setSocialMediasOpacity(1)
+            setSocialMediasVisible("block")
         }
 
        if(socialButton==="socialMediaProfileOn.svg"){
            setSocialButton("socialMediaProfile.svg")
            setSocialButtonStyle(styles.nonActiveButton)
-           setSocialMediasOpacity(0)
+           setSocialMediasVisible("none")
        }
     }
 
@@ -76,7 +73,7 @@ function handleSearchSubmit(e){
 <br/>
     <div className="row">
         <div className="col s4" style={{display:"grid",justifyContent:"space-around",justifyItems:"center"}}>
-            <p style={{fontSize:"2em",color:"white"}}>Оставить заявку:</p>
+            <p style={{fontSize:"2rem",color:"white"}}>Оставить заявку:</p>
 <form style={{border:"2px solid grey",padding:"5px",width:"30vw"}}>
     <p ><b style={{color:"white"}}>Напишите ваши данные:</b></p>
     <input type="text" placeholder="Ваше ФИО"/>
@@ -100,11 +97,13 @@ function handleSearchSubmit(e){
             <p style={{fontSize:"2em",color:"white"}}>Связаться со мной:</p>
             <span className="material-icons phone" style={{fontSize:"3rem"}}><a style={{color:"green"}} href="tel:+77756433496">call</a></span>
             <span className="material-icons mail" style={{fontSize:"3rem"}}><a style={{color:"white"}} href="mailto:mr.ghnuma@gmail.com">email</a></span>
+            <div id="Medias">
+            <a href="https://www.instagram.com/mr.ghnuma/" className="socialMedias fa fa-3x fa-instagram instagram" style={{display:socialMediasVisible}} />
+            <a href="https://twitter.com/Nurmukh28018713" className="socialMedias fa fa-3x fa-twitter twitter" style={{display:socialMediasVisible}} />
+            <a href="https://vk.com/numaom" className="socialMedias fa fa-3x fa-vk vk" style={{display:socialMediasVisible}} />
+            <a href="https://www.youtube.com/channel/UCe20AftYCky7i1CoLpP6lIw/playlists" className="socialMedias fa fa-3x fa-youtube youtube" style={{display:socialMediasVisible}} />
+            </div>
             <img className="socialMediaButton" onClick={switchSocialMediaButton} src={socialButton} style={socialButtonStyle} alt="MagicButton"/>
-                <a href="https://www.instagram.com/mr.ghnuma/" className="socialMedias instagram"><img alt="Instagram"  style={{opacity:socialMediasOpacity}} src="instagram.png" /></a>
-                <a href="https://twitter.com/Nurmukh28018713" className="socialMedias twitter"><img alt="Twitter"  style={{opacity:socialMediasOpacity}} src="twitter.png" /></a>
-                <a href="https://vk.com/numaom" className="socialMedias vk"><img alt="Vk"  style={{opacity:socialMediasOpacity}} src="vk.png" /></a>
-                <a href="https://www.youtube.com/channel/UCe20AftYCky7i1CoLpP6lIw/playlists" className="socialMedias youtube"><img alt="YouTube"  style={{opacity:socialMediasOpacity}} src="youtube.png"/></a>
         </div>
         <div className="col s4" style={{display:"grid",justifyContent:"space-around",justifyItems:"center"}}>
 

@@ -9,8 +9,12 @@ html{
   height: 100%;
 }
 body{
-
-
+  background-size: 100% ;
+  background: linear-gradient(180deg, rgba(128, 128, 128, 0) 2%, white 98%) no-repeat fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+overflow-x: hidden;
 }
 
 /*#welcomeText p{
@@ -75,21 +79,20 @@ header{
 
 #myInfoBorder{
   position: relative;
-  height: 22vh;
+  height: 20vh;
   width: 40vw;
-  padding: 20px;
+  padding: 1rem;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  left: 20px;
   border: 2px solid #000000;
   box-shadow: -20px 10px 2px rgba(0,0,0,0.31) ;
   background: rgba(255, 255, 255, 0.8);
   z-index: 3;
-  min-width: 250px;
 }
 
 #myPhoto{
+  margin-right: 30px;
   right: 0;
   bottom: 0;
   border:none;
@@ -98,12 +101,14 @@ header{
   initial-scale:1.0;
   height: 45vw;
   width: 45vw;
+  border-radius: 50%;
+  margin-bottom: 160px;
 }
 
 
 
 .aboutMy{
-  font-size: 1.5rem;
+  font-size: 2vw;
   margin: 0;
   padding: 0;
   color: #000000;
@@ -115,7 +120,6 @@ header{
 
 nav{
   height: 50px;
-  width: 100%;
   background-color: rgba(200, 0, 252, 0);
   box-shadow: none;
   z-index:50;
@@ -128,9 +132,12 @@ nav{
 
 main{
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 40% 60%;
   z-index: 3;
-justify-content: end;
+  align-items: center;
+  width: 80vw;
+  margin-left: 10vw;
 }
 
 
@@ -173,7 +180,6 @@ justify-content: end;
 }
 
 .shadowText{
-  position: absolute;
   left: 10%;
   font-size: 5vw;
   color: #ffffff;
@@ -190,7 +196,6 @@ top: 5vh;
 
 
 .hoveredShadowText{
-  position: absolute;
   left: 10%;
   font-size: 5vw;
   top: 5vh;
@@ -219,8 +224,8 @@ position: inherit;
 }
 
 .socialMediaButton{
-  height: 35vh;
-  width: 18vw;
+  height: 30vh;
+  width: 16vw;
   cursor: pointer;
 }
 
@@ -284,36 +289,47 @@ transform: scale(1) rotate(0deg);
   }
 }
 
+#Medias{
+  display: flex;
+  justify-content: space-between;
+}
+
 .socialMedias {
   display: flex;
   position: relative;
   height: 60px;
   width: 60px;
-transition: opacity 0.5s linear ;
+  transition: opacity 0.5s linear, text-shadow ease-in-out 150ms, display 0.5s linear ;
 
+}
+
+.socialMedias:hover{
+  margin-top: -6px;
+  text-shadow: -25px 25px 4px #ffffff;
 }
 
 .instagram{
-  bottom: 280px;
-  right: 150px;
+  background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  display:table;
 }
 
 .twitter{
-  bottom: 340px;
-  left: 150px;
+color: #00acee;
+
 }
 
 .vk{
-  bottom: 170px;
-  left: 150px;
+  color:#4c75a3;
+
 }
-
-
 
 .youtube{
-  bottom: 230px;
-  right: 150px;
+color: #c4302b;
+
 }
+
 
 
 .workPlaceNameText{
@@ -326,9 +342,8 @@ transition: opacity 0.5s linear ;
 -webkit-text-fill-color: transparent;
 animation: text-animation 2s linear infinite ;
 background-size: 300% 100%;
-margin: 20px;
-  margin-left: 60px;
-cursor: pointer;
+  margin: 20px 20px 20px 60px;
+  cursor: pointer;
 }
 
 @keyframes text-animation{
@@ -507,7 +522,6 @@ margin: 5px;
   margin: 0 auto;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -529,6 +543,9 @@ margin: 5px;
 display: flex;
   align-self: center;
   justify-content: center;
+  background-color:rgba(182,197,200,0.79);
+  position: absolute;
+  height: 50px;
 }
 
 .headerText{
@@ -544,8 +561,31 @@ display: flex;
     height: 15vh;
   }
   .shadowText{
-    font-size: 7vw;
+    font-size: 6vw;
   }
 
 }
 
+@media screen and (max-width: 532px) {
+  .aboutMy{
+    font-size: 0.7rem;
+  }
+  #myInfoBorder{
+    height: 12vh;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+.socialMediaButton{
+  width: 122px;
+  height: 132px;
+}
+}
+
+@media screen and (max-width: 425px){
+  .socialMediaButton{
+    width: 102px;
+    height: 102px;
+  }
+}

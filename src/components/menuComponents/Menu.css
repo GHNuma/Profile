@@ -6,6 +6,8 @@
     left:0;
     transform: translateX(-130%);
     transition: all 0.2s;
+    z-index: 90000000000000;
+
 }
 
 .menu.active{
@@ -29,7 +31,6 @@ display: flex;
     flex-direction:column;
     align-items: center;
     transition: all 0.4s;
-
 }
 
 .menu__header {
