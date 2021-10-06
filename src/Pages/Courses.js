@@ -3,13 +3,11 @@ import Book from "../components/courseComponents/Book";
 import $ from "jquery";
 import "turn.js";
 
-function Courses (){
-
+function Courses ()
+{
 
 
         const options = {
-                width: 1500,
-                height: 600,
                 autoCenter: true,
                 display: "double",
                 acceleration: true,

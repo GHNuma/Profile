@@ -17,7 +17,7 @@ const [isOpen,setIsOpen]=useState(false)
             width: "100%"
         }}>
 
-                    <div style={{display: "flex", justifyContent: "space-between"}}>
+                    <div style={{display:"flex", justifyContent: "center"}}>
                         <button style={{border: 0}} className="workPlaceNameText"
                                 onClick={() => setIsOpen(true)}>{name}</button>
                         <span className="line"/>

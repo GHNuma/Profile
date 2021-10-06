@@ -513,7 +513,11 @@ margin: 5px;
   flex-direction: column;
 }
 
+
+
 .certificates {
+  height: 70vh;
+  width: 90vw;
   margin: 0 auto;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -554,7 +558,17 @@ display: flex;
   justify-items: center;
 }
 
+@media screen and (max-width:4000px){
+  .certificates{
+    height: 90vh;
+  }
+}
 
+@media screen and (max-width: 2000px){
+  .certificates{
+    height: 85vh;
+  }
+}
 
 @media screen and (max-width: 1441px) {
   .contactMe{
@@ -563,7 +577,12 @@ display: flex;
     width: 162px;
     height: 192px;
   }
+  .certificates{
+    height:80vh;
+  }
 }
+
+
 
 @media screen and (max-width: 1241px) {
   .contactMe{
@@ -572,12 +591,25 @@ display: flex;
     width: 142px;
     height: 162px;
   }
-  
+  .certificates{
+    height: 70vh;
+  }
 }
+
+
 
 @media screen and (max-width: 1161px) {
   .socialMedias{
     width:60px;
+  }
+  .certificates{
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .certificates{
+    height: 50vh;
   }
 }
 
@@ -591,7 +623,9 @@ display: flex;
   .shadowText{
     font-size: 6vw;
   }
-
+  .certificates{
+    height: 40vh;
+  }
 }
 
 @media screen and (max-width: 769px){
@@ -608,6 +642,9 @@ display: flex;
   }
   .headerText{
     font-size:3vw ;
+  }
+  .certificates{
+    height: 30vh;
   }
 }
 
@@ -628,6 +665,10 @@ display: flex;
   nav{
     height: 25px;
   }
+  .certificates{
+    height: 25vh;
+  }
+
 }
 
 @media screen and (max-width: 426px){
@@ -648,6 +689,9 @@ display: flex;
   }
   main{
     height: 570px;
+  }
+  .certificates{
+    height: 20vh;
   }
 
 }
