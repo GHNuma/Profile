@@ -19,8 +19,8 @@ function Footer() {
         button:{
             border:"none",
             background:"none",
-            fontSize:"3vh",
-            color:"white"
+            fontSize:"2.5vw",
+            color:"white",
         },
         nonActiveButton:{
             background:"linear-gradient(135deg,rgba(0,0,0,0.05),grey) ",
@@ -69,11 +69,11 @@ function handleSearchSubmit(e){
     return (
 <div>
 
-<form style={{display:"flex",justifyContent:"center"}} onSubmit={e=>handleSearchSubmit(e)}>
-    <input style={{width:"600px",color:"white"}} placeholder="Что вы ищете?" type="text" value={search} onChange={(e)=> setSearch(e.target.value)}/>
+<form className="finder" style={{display:"flex",justifyContent:"center"}} onSubmit={e=>handleSearchSubmit(e)}>
+    <input  style={{fontSize:"2vw",color:"white",width:"40vw"}} placeholder="Что вы ищете?" type="text" value={search} onChange={(e)=> setSearch(e.target.value)}/>
     &nbsp;
     &nbsp;
-    <button style={styles.button} type="submit">Найти</button>
+    <button style={styles.button} type="submit" >Найти</button>
 </form>
 <br/>
     <div style={{display:"flex",justifyContent:"center"}}>
@@ -111,8 +111,8 @@ function handleSearchSubmit(e){
 
         <div className="contactMe">
             <p style={{fontSize:"2vw",color:"white"}}>Связаться со мной:</p>
-            <span className="material-icons phone" style={{fontSize:"3vw"}}><a style={{color:"green"}} href="tel:+77756433496">call</a></span>
-            <span className="material-icons mail" style={{fontSize:"3vw"}}><a style={{color:"white"}} href="mailto:mr.ghnuma@gmail.com">email</a></span>
+            <span className="material-icons phone" style={{fontSize:"5vw"}}><a style={{color:"green"}} href="tel:+77756433496">call</a></span>
+            <span className="material-icons mail" style={{fontSize:"5vw"}}><a style={{color:"white"}} href="mailto:mr.ghnuma@gmail.com">email</a></span>
             <div id="Medias">
                 <a href="https://www.instagram.com/mr.ghnuma/" className="socialMedias fa fa-3x fa-instagram instagram" style={{display:socialMediasVisible}} />
                 <a href="https://twitter.com/Nurmukh28018713" className="socialMedias fa fa-3x fa-twitter twitter" style={{display:socialMediasVisible}} />

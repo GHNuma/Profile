@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Full from "../components/portfolioComponents/Full"
+import MyPortfolio from "../components/portfolioComponents/myPortfolio"
 
 function Portfolio() {
 
@@ -40,7 +40,7 @@ function Portfolio() {
         return (
             <div className="portfolioWrapper">
                 {allProjects.map((projects,index)=>{
-                    return <Full key={index} {...projects}/>
+                    return <MyPortfolio key={index} {...projects}/>
                 }
                 )}
             </div>

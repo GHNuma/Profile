@@ -171,7 +171,7 @@ main{
 
 .burger-btn span{
   position: absolute;
-  top:9px;
+  top:8px;
   width: 20px;
   background: #000000;
   height: 2px;
@@ -212,7 +212,6 @@ cursor: pointer;
 footer{
 
   padding:0 0 10px 0;
-position: inherit;
   height: auto;
 }
 
@@ -347,7 +346,7 @@ color: #c4302b;
   text-shadow: -25px 25px 4px rgba(131, 58, 180, 0.6);
 }
 .workPlaceNameText{
-  font-size:3vw;
+  font-size:5vw;
   color:white;
   background-color: rgb(25 25 25);
   background-size: 300% 100%;
@@ -405,12 +404,12 @@ padding: 0.5rem;
 .modal-body{
   margin: 60px;
 padding: 2rem;
-width: 800px;
+width: 70vw;
 border-radius: 5px;
 background: rgba(255, 255, 255, 0.73);
-height: 550px;
 border: 5px ridge rgba(255, 215, 0, 0.68);
 font-size: 20px;
+  height: 40vh;
   color: black;
 }
 
@@ -468,20 +467,20 @@ cursor: pointer;
 
 .projectsBtnBlock:nth-child(1) .projectsBtn{
   height: 200px;
-  font-size: 15px;
+  font-size: 1.5vw;
 color: rgba(0, 0, 0, 0.55);
 }
 .projectsBtnBlock:nth-child(2) .projectsBtn{
   height: 200px;
-  font-size: 25px;
+  font-size: 2.5vw;
   color: rgb(84, 255, 248);
 }
 
 .projectsBtnBlock:nth-child(1) .projectsBtn:hover{
-  font-size: 20px;
+  font-size: 2vw;
 }
 .projectsBtnBlock:nth-child(2) .projectsBtn:hover{
-font-size:30px;
+font-size:3vw;
 }
 
 
@@ -511,7 +510,9 @@ margin: 5px;
   display: flex;
   flex-direction: column;
 }
-
+.allProjects-body a{
+  font-size: 2vw;
+}
 
 
 .certificates {
@@ -567,6 +568,18 @@ display: flex;
   .certificates{
     height: 85vh;
   }
+  .header{
+    height: 80px;
+  }
+  nav{
+    height: 80px;
+  }
+  .headerText{
+    font-size: 3.5vw;
+  }
+
+
+
 }
 
 @media screen and (max-width: 1441px) {
@@ -578,6 +591,12 @@ display: flex;
   }
   .certificates{
     height:80vh;
+  }
+  .modal-body{
+    height: 50vh;
+  }
+  .headerText{
+    font-size: 3vw;
   }
 }
 
@@ -593,6 +612,9 @@ display: flex;
   .certificates{
     height: 70vh;
   }
+  .modal-body{
+    height: 45vh;
+  }
 }
 
 
@@ -604,12 +626,19 @@ display: flex;
   .certificates{
     height: 60vh;
   }
+  .modal-body{
+    height: 40vh;
+  }
 }
 
 @media screen and (max-width:1024px) {
   .certificates{
     height: 50vh;
   }
+  .headerText{
+    font-size:3.5vw ;
+  }
+
 }
 
 @media screen and (max-width: 801px) {
@@ -625,6 +654,7 @@ display: flex;
   .certificates{
     height: 40vh;
   }
+
 }
 
 @media screen and (max-width: 769px){
@@ -637,13 +667,16 @@ display: flex;
     height:55px;
   }
   .header{
-    height: 40px;
+    height: 35px;
   }
   .headerText{
-    font-size:3vw ;
+    font-size:3.5vw ;
   }
   .certificates{
     height: 30vh;
+  }
+  nav{
+    height: 35px;
   }
 }
 
@@ -662,15 +695,20 @@ display: flex;
     height: 30px;
   }
   nav{
-    height: 25px;
+    height: 30px;
   }
   .certificates{
     height: 25vh;
+  }
+  .modal-body{
+
+    height: 35vh;
   }
 
 }
 
 @media screen and (max-width: 426px){
+
   .socialMediaButton{
     width: 102px;
     height: 102px;
@@ -684,7 +722,10 @@ display: flex;
     height: 25px;
   }
   .headerText{
-    font-size:4vw;
+    font-size:4.5vw;
+  }
+  nav{
+    height: 25px;
   }
   main{
     height: 570px;
@@ -692,22 +733,58 @@ display: flex;
   .certificates{
     height: 20vh;
   }
-  .duration{
+  .position{
+    font-size:2vw;
 
   }
 
-  .position{
-
+  .duration{
+    font-size: 1.5vw;
   }
 
   .description{
+    font-size: 2vw;
+  }
+
+  .modal-body{
+    padding: 1rem;
+    height: 30vh;
+  }
+
+  .projectsBtnBlock:nth-child(1) .projectsBtn{
+    font-size: 2vw;
+  }
+
+  .projectsBtnBlock:nth-child(2) .projectsBtn{
     font-size: 3vw;
+  }
+
+  .projectsBtnBlock:nth-child(1) .projectsBtn:hover{
+    font-size: 2.5vw;
+  }
+
+  .projectsBtnBlock:nth-child(2) .projectsBtn:hover{
+    font-size:3.5vw;
+  }
+
+  .allProjects-body a{
+    font-size: 2.5vw;
   }
 }
 
+@media screen and (max-width: 376px){
+  .headerText{
+    font-size:5vw;
+  }
+}
+@media screen and (max-width: 321px){
+  .headerText{
+    font-size:5.5vw;
+  }
+}
 @media screen and (min-width:767px) and (max-width:4000px)  {
   .workPlaceNameText{
-    font-size:5vw;
+    font-size:4vw;
     color:black;
     background:-webkit-linear-gradient(135deg,gold,lightgrey,gold,lightgrey,gold,lightgrey,gold);
     -webkit-background-clip: text;

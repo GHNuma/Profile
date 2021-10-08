@@ -14,7 +14,7 @@ const [isOpen,setIsOpen]=useState(false)
             flexDirection: "column",
             justifyContent: "center",
             height: "100%",
-            width: "100%"
+            width: "100%",
         }}>
 
                     <div style={{display:"flex", justifyContent: "center"}}>
@@ -25,7 +25,6 @@ const [isOpen,setIsOpen]=useState(false)
                     </div>
 
         </div>
-            <span className="line"/>
 </>
     );
 }

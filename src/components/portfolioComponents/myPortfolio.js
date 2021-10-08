@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 
-function Full({when,...projects}) {
+function MyPortfolio({when,...projects}) {
     const [fullInfo,setFullInfo]=useState(false)
     return (
         <div  className="projectsBtnBlock">
@@ -19,4 +19,4 @@ function Full({when,...projects}) {
     );
 }
 
-export default Full;
+export default MyPortfolio;

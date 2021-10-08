@@ -40,12 +40,15 @@ function Experience (){
     ]);
 
     return (
-            <div style={{background:"rgba(0,0,0,0.9)"}}>
+
+            <div style={{background:"rgba(0,0,0,0.9)",minHeight:"60vh",display:"flex",justifyContent:"center",flexDirection:"column"}}>
                 {jobs.map(job => {
                    return <Career key={job.id} {...job} />
 
                 })}
+
             </div>
+
         );
     }
 

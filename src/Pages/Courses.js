@@ -32,7 +32,7 @@ function Courses ()
         ];
 
         return (
-            <div>
+            <div style={{minHeight:"500px"}}>
                     <br/>
                     <Book options={options} className="certificates">
                             {pages.map((page, index) => (
