@@ -69,35 +69,45 @@ ul{
     padding-top: 5px;
     font-size: 3vw;
 }
-@media screen and (max-width: 4000px){
+@media screen and (min-width: 2000px) and (max-width: 4000px){
     .menu__content a {
-        font-size:1.5rem;
+        font-size:3.5rem;
+    }
+    .menu__header{
+        font-size:7rem;
+        padding: 35px;
     }
 }
 
 @media screen and (max-width: 1440px){
     .menu__content a {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
 @media screen and (max-width: 769px) {
     .menu__content a{
-        font-size: 0.8rem;
+        font-size: 1rem;
+    }
+    .material-icons{
+        font-size: 3.5vw;
     }
 }
 
 @media screen and (max-width: 445px) {
     .menu__content{
-        width: 45%;
+        width: 50%;
     }
     .blur{
-        left:45%
+        left:50%
     }
     .menu__content a{
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
     .menu{
-        transform:translateX(-145%);
+        transform:translateX(-150%);
+    }
+    .material-icons{
+        font-size: 5vw;
     }
 
 }

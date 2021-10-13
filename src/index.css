@@ -409,7 +409,7 @@ border-radius: 5px;
 background: rgba(255, 255, 255, 0.73);
 border: 5px ridge rgba(255, 215, 0, 0.68);
 font-size: 20px;
-  height: 40vh;
+  height: 70vh;
   color: black;
 }
 
@@ -562,6 +562,13 @@ display: flex;
   .certificates{
     height: 90vh;
   }
+  .header{
+    height: 90px;
+  }
+  nav{
+    height: 90px;
+  }
+
 }
 
 @media screen and (max-width: 2000px){
@@ -569,15 +576,50 @@ display: flex;
     height: 85vh;
   }
   .header{
-    height: 80px;
+    height: 65px;
   }
   nav{
-    height: 80px;
+    height: 65px;
   }
   .headerText{
     font-size: 3.5vw;
   }
+  .burger-btn{
+    width: 25px;
+    height: 18px;
+    margin-left: 20px;
+    position: relative;
+    cursor: pointer;
 
+  }
+
+  .burger-btn:before{
+    content: "";
+    position: absolute;
+    top:0;
+    width: 25px;
+    background: #000000;
+    height: 2px;
+  }
+
+  .burger-btn:after{
+    content: "";
+    position: absolute;
+    bottom:0;
+    width: 25px;
+    background: #000000;
+    height: 2px;
+  }
+
+
+
+  .burger-btn span{
+    position: absolute;
+    top:8px;
+    width: 25px;
+    background: #000000;
+    height: 2px;
+  }
 
 
 }
@@ -598,6 +640,7 @@ display: flex;
   .headerText{
     font-size: 3vw;
   }
+
 }
 
 
@@ -613,7 +656,7 @@ display: flex;
     height: 70vh;
   }
   .modal-body{
-    height: 45vh;
+    height: 50vh;
   }
 }
 
@@ -626,19 +669,59 @@ display: flex;
   .certificates{
     height: 60vh;
   }
-  .modal-body{
-    height: 40vh;
-  }
+
+
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1025px) {
   .certificates{
-    height: 50vh;
+    height: 60vh;
   }
   .headerText{
     font-size:3.5vw ;
   }
+  .header{
+    height: 55px;
+  }
+  .burger-btn{
+    width: 20px;
+    height: 18px;
+    margin-left: 20px;
+    position: relative;
+    cursor: pointer;
 
+  }
+
+  .burger-btn:before{
+    content: "";
+    position: absolute;
+    top:0;
+    width: 20px;
+    background: #000000;
+    height: 2px;
+  }
+
+  .burger-btn:after{
+    content: "";
+    position: absolute;
+    bottom:0;
+    width: 20px;
+    background: #000000;
+    height: 2px;
+  }
+
+
+
+  .burger-btn span{
+    position: absolute;
+    top:8px;
+    width: 20px;
+    background: #000000;
+    height: 2px;
+  }
+  .modal-body{
+    height: 40vh;
+  }
 }
 
 @media screen and (max-width: 801px) {
@@ -652,7 +735,7 @@ display: flex;
     font-size: 6vw;
   }
   .certificates{
-    height: 40vh;
+    height: 60vh;
   }
 
 }
@@ -673,10 +756,13 @@ display: flex;
     font-size:3.5vw ;
   }
   .certificates{
-    height: 30vh;
+    height: 60vh;
   }
   nav{
     height: 35px;
+  }
+  .modal-body{
+    height: 40vh;
   }
 }
 
@@ -700,10 +786,7 @@ display: flex;
   .certificates{
     height: 25vh;
   }
-  .modal-body{
 
-    height: 35vh;
-  }
 
 }
 
@@ -731,25 +814,26 @@ display: flex;
     height: 570px;
   }
   .certificates{
-    height: 20vh;
+    height: 30vh;
   }
   .position{
-    font-size:2vw;
+    font-size:3vw;
 
   }
 
   .duration{
-    font-size: 1.5vw;
+    font-size: 2.5vw;
   }
 
   .description{
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .modal-body{
     padding: 1rem;
-    height: 30vh;
+    height:60vh;
   }
+
 
   .projectsBtnBlock:nth-child(1) .projectsBtn{
     font-size: 2vw;
@@ -793,5 +877,53 @@ display: flex;
     background-size: 300% 100%;
     margin: 20px 20px 20px 60px;
     cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 2000px){
+  .burger-btn{
+    width: 35px;
+    height:25px;
+    margin-left: 20px;
+    position: relative;
+    cursor: pointer;
+
+  }
+
+  .burger-btn:before{
+    content: "";
+    position: absolute;
+    top:0;
+    width: 35px;
+    background: #000000;
+    height: 4px;
+  }
+
+  .burger-btn:after{
+    content: "";
+    position: absolute;
+    bottom:0;
+    width: 35px;
+    background: #000000;
+    height: 4px;
+  }
+  .burger-btn span{
+    position: absolute;
+    top:10px;
+    width: 35px;
+    background: #000000;
+    height: 4px;
+  }
+  .position{
+    font-size:3vw;
+
+  }
+
+  .duration{
+    font-size: 2.5vw;
+  }
+
+  .description{
+    font-size: 2.5vw;
   }
 }
