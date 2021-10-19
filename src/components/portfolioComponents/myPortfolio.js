@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import "./portfolio.css"
 
 function MyPortfolio({when,...projects}) {
     const [fullInfo,setFullInfo]=useState(false)

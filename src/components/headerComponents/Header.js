@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Header(props) {
+function Header() {
     return (
         <div className="header">
-<p className="headerText">Web developer's personal portfolio</p>
+            <p className="headerText">Web developer's personal portfolio</p>
         </div>
     );
 }

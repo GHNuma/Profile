@@ -1,0 +1,82 @@
+.projectsBtn{
+    transition:font-size 1s linear;
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 100%;
+}
+
+.projectsBtnBlock:nth-child(1) .projectsBtn{
+    height: 200px;
+    font-size: 1.5vw;
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.projectsBtnBlock:nth-child(2) .projectsBtn{
+    height: 200px;
+    font-size: 2.5vw;
+    color: rgb(84, 255, 248);
+}
+
+.projectsBtnBlock:nth-child(1) .projectsBtn:hover{
+    font-size: 2vw;
+}
+
+.projectsBtnBlock:nth-child(2) .projectsBtn:hover{
+    font-size:3vw;
+}
+
+.projectsBtnBlock{
+    transition: background-color 1s linear;
+    background: rgba(2, 2, 2, 0.46);
+    height: 200px;
+}
+
+.projectsBtnBlock:nth-child(1):hover{
+    background: rgba(0, 255, 113, 0.92);
+}
+
+.projectsBtnBlock:nth-child(2):hover{
+    background: #7a00ff;
+}
+
+.allProjects{
+    margin: 20px 0;
+    height: auto;
+    width: 100%;
+    background: #c0baba;
+}
+
+.allProjects-body{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.allProjects-body a{
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 426px){
+
+    .projectsBtnBlock:nth-child(1) .projectsBtn{
+        font-size: 2vw;
+    }
+
+    .projectsBtnBlock:nth-child(2) .projectsBtn{
+        font-size: 3vw;
+    }
+
+    .projectsBtnBlock:nth-child(1) .projectsBtn:hover{
+        font-size: 2.5vw;
+    }
+
+    .projectsBtnBlock:nth-child(2) .projectsBtn:hover{
+        font-size:3.5vw;
+    }
+
+    .allProjects-body a{
+        font-size: 2.5vw;
+    }
+
+}

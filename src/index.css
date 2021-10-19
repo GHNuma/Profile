@@ -2,18 +2,15 @@
   padding: 0;
   margin: 0;
   color: black;
-
 }
 
-html{
-}
 body{
   background-size: 100% ;
   background: white no-repeat fixed;
   display: flex;
   flex-direction: column;
   height: 100%;
-overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 /*#welcomeText p{
@@ -32,33 +29,24 @@ overflow-x: hidden;
           coder  4s linear  0s  infinite forwards;
 }
 
-
 @keyframes typing {
   0% { width: 0 }
   50%{ width: 58%}
   75%{width: 58%}
-  100%{width: 0
-  }
+  100%{width: 0}
 }
 
 @keyframes coder {
   from, to {
     border-color: transparent
   }
-  0%  {
+  0% {
     border-color: rgba(12,255,218,0.50)
-
   }
-
-  100%{
+  100% {
     border-color:rgba(12,255,218,1) ;
-
   }
 }
-
-
-
-
 
 header{
   width:auto;
@@ -67,14 +55,10 @@ header{
 }
 
 #welcomeText{
-
   font-family: ft40 cursive;
   text-align: center;
-
-
 }
 */
-
 
 #myInfoBorder{
   position: relative;
@@ -104,18 +88,16 @@ header{
   margin-bottom: 160px;
 }
 
-
-
 .aboutMy{
   font-size: 2vw;
   margin: 0;
   padding: 0;
   color: #000000;
 }
+
 .aboutMy strong{
   color: #000000;
 }
-
 
 nav{
   height: 50px;
@@ -124,9 +106,6 @@ nav{
   z-index:50;
   display: flex;
   align-items: center;
-
-
-
 }
 
 main{
@@ -138,15 +117,12 @@ main{
   margin-left: 10vw;
 }
 
-
-
 .burger-btn{
   width: 20px;
   height: 18px;
   margin-left: 20px;
   position: relative;
   cursor: pointer;
-
 }
 
 .burger-btn:before{
@@ -167,8 +143,6 @@ main{
   height: 2px;
 }
 
-
-
 .burger-btn span{
   position: absolute;
   top:8px;
@@ -185,13 +159,11 @@ main{
   letter-spacing: 0.15em;
   text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474, -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181, -7px 14px 1px #868585, -8px 16px 1px #8b8a89, -9px 18px 1px #8f8e8d, -10px 20px 1px #949392, -11px 22px 1px #999897, -12px 24px 1px #9e9c9c;
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-top: 5vh;
+  top: 5vh;
   text-align: center;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
 }
-
-
 
 .hoveredShadowText{
   left: 10%;
@@ -202,15 +174,13 @@ top: 5vh;
   letter-spacing: 0.15em;
   text-shadow: 1px -1px 0 rgba(255, 2, 2, 0.75), -1px 2px 1px #FF0202BF, -2px 4px 1px #FF0202BF, -3px 6px 1px #FF0202BF, -4px 8px 1px #0000FFBF, -5px 10px 1px #0000FFBF, -6px 12px 1px #0000FFBF, -7px 14px 1px #00FF00BF, -8px 16px 1px #00FF00BF, -9px 18px 1px #00FF00BF, -10px 20px 1px #FFFF00BF, -11px 22px 1px #FFFF00BF, -12px 24px 1px #FFFF00BF;
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-cursor: pointer;
+  cursor: pointer;
   text-align: center;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
 }
 
-
 footer{
-
   padding:0 0 10px 0;
   height: auto;
 }
@@ -220,300 +190,17 @@ footer{
 
 }
 
-.socialMediaButton{
-  height: 30vh;
-  width: 16vw;
-  cursor: pointer;
-}
-
-.socialMediaButton:hover{
-  animation: 1s linear 0s normal none infinite running hey;
-}
-
-@keyframes hey {
-  0% {
-    transform: scale(1);
-
-  }
-
-  50% {
-    transform: scale(1.01);
-  }
-100%{
-  transform:scale(1);
-}
-}
-
-
-.phone:hover{
-  animation: 1s linear 0s normal none infinite running prot;
-
-}
-
-@keyframes prot {
-  0% {
-    transform: rotate(0deg);
-  }
-  50%{
-    transform: rotate(30deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-.mail:hover{
-  animation: 2s linear 0s normal none infinite running mrot;
-}
-
-@keyframes mrot {
-  0%{
-    transform: scale(1) rotate(0deg) ;
-
-}
-  25%{
-    transform: scale(1.2) rotate(20deg);
-  }
-50%{
-  transform: scale(1) rotate(0deg);
-
-}
-  75%{
-    transform: scale(1.2) rotate(-20deg);
-  }
-  100% {
-transform: scale(1) rotate(0deg);
-  }
-}
-
-#Medias{
-  display: flex;
-  justify-content: space-between;
-}
-
-.socialMedias {
-  display: flex;
-  position: relative;
-  height: 80px;
-  width: 80px;
-  transition: opacity 0.5s linear, text-shadow ease-in-out 150ms, display 0.5s linear ;
-font-size: 3vw;
-}
-
-
-
-.instagram{
-  background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-  display:table;
-}
-
-.twitter{
-color: #00acee;
-
-}
-
-.vk{
-  color:#4c75a3;
-
-}
-
-.youtube{
-color: #c4302b;
-
-}
-
-
-
-.twitter:hover{
-  margin-top: -6px;
-  text-shadow: -25px 25px 4px rgba(0, 172, 238, 0.6);
-}
-
-.vk:hover{
-  margin-top: -6px;
-  text-shadow: -25px 25px 4px rgba(76, 117, 163, 0.6);
-}
-
-.youtube:hover{
-  margin-top: -6px;
-  text-shadow: -25px 25px 4px rgba(196, 48, 43, 0.6);
-}
-
-.instagram:hover{
-  margin-top: -6px;
-  text-shadow: -25px 25px 4px rgba(131, 58, 180, 0.6);
-}
-.workPlaceNameText{
-  font-size:5vw;
-  color:white;
-  background-color: rgb(25 25 25);
-  background-size: 300% 100%;
-  margin: 20px 20px 20px 60px;
-  cursor: pointer;
-}
-
-@keyframes text-animation{
-0% {
-  background-position: 100%
-}
-100%{
-background-position: 0
-}
-
-}
-
-.line{
-height:1px;
-background:linear-gradient(135deg,lawngreen,orangered,lawngreen);
-animation: line-animation 2s linear infinite;
-width:100%;
-position:absolute;
-}
-
-@keyframes line-animation{
-0% {
-  background-position: 100%
-}
-
-100%{
-  background-position: 0
-}
-}
-
-
-
-.modal{
-position: fixed;
-height: 100vh;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  max-height: 100vh;
-  width: 100vw;
-background: rgba(0,0,0,0.4);
-display: flex;
-justify-content: center;
-  align-items: center;
-padding: 0.5rem;
-  z-index: 200;
-}
-
-.modal-body{
-  margin: 60px;
-padding: 2rem;
-width: 70vw;
-border-radius: 5px;
-background: rgba(255, 255, 255, 0.73);
-border: 5px ridge rgba(255, 215, 0, 0.68);
-font-size: 20px;
-  height: 70vh;
-  color: black;
-}
-
 .hide{
   display: none;
 }
 
-.position{
-font-size:2.5vw;
-  color: black;
-  border: 2px outset rgba(255, 255, 255, 0.73);
-  text-align: center;
-}
-
-.duration{
-  font-size:2vw;
-animation: texting 2s infinite linear;
-  text-decoration: underline;
-  color: black;
-  text-align: center;
-
-}
-
-
-
-.description{
-  text-align:justify;
-  color: black;
-  font-size:1.7vw;
-}
-
-.modal-contain{
-
-  border: 2px inset rgba(255, 255, 255, 0.73);
-  padding: 5px;
-}
-
-
-
 .portfolioWrapper{
   margin: 50px 50px;
-display: grid;
+  display: grid;
   grid-template-columns: 1fr 3fr;
   grid-column-gap: 5px;
   height: 600px;
 }
-
-.projectsBtn{
-  transition:font-size 1s linear;
-cursor: pointer;
-  border: none;
-  background: none;
-  width: 100%;
-}
-
-.projectsBtnBlock:nth-child(1) .projectsBtn{
-  height: 200px;
-  font-size: 1.5vw;
-color: rgba(0, 0, 0, 0.55);
-}
-.projectsBtnBlock:nth-child(2) .projectsBtn{
-  height: 200px;
-  font-size: 2.5vw;
-  color: rgb(84, 255, 248);
-}
-
-.projectsBtnBlock:nth-child(1) .projectsBtn:hover{
-  font-size: 2vw;
-}
-.projectsBtnBlock:nth-child(2) .projectsBtn:hover{
-font-size:3vw;
-}
-
-
-.projectsBtnBlock{
-  transition: background-color 1s linear;
-  background: rgba(2, 2, 2, 0.46);
-height: 200px;
-}
-
-.projectsBtnBlock:nth-child(1):hover{
-  background: rgba(0, 255, 113, 0.92);
-
-}
-.projectsBtnBlock:nth-child(2):hover{
-  background: #7a00ff;
-}
-
-.allProjects{
-  margin: 20px 0;
-  height: auto;
-  width: 100%;
-background: #c0baba;
-}
-
-.allProjects-body{
-margin: 5px;
-  display: flex;
-  flex-direction: column;
-}
-.allProjects-body a{
-  font-size: 2vw;
-}
-
 
 .certificates {
   height: 70vh;
@@ -539,7 +226,7 @@ margin: 5px;
 .header{
   width: 100%;
   font-size: 1.5rem;
-display: flex;
+  display: flex;
   align-self: center;
   justify-content: center;
   background-color:rgba(182,197,200,0.79);
@@ -552,19 +239,15 @@ display: flex;
   font-size: 2.5vw;
 }
 
-.contactMe{
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-}
-
 @media screen and (max-width:4000px){
   .certificates{
     height: 90vh;
   }
+
   .header{
     height: 90px;
   }
+
   nav{
     height: 90px;
   }
@@ -572,25 +255,29 @@ display: flex;
 }
 
 @media screen and (max-width: 2000px){
+
   .certificates{
     height: 85vh;
   }
+
   .header{
     height: 65px;
   }
+
   nav{
     height: 65px;
   }
+
   .headerText{
     font-size: 3.5vw;
   }
+
   .burger-btn{
     width: 25px;
     height: 18px;
     margin-left: 20px;
     position: relative;
     cursor: pointer;
-
   }
 
   .burger-btn:before{
@@ -611,8 +298,6 @@ display: flex;
     height: 2px;
   }
 
-
-
   .burger-btn span{
     position: absolute;
     top:8px;
@@ -621,75 +306,70 @@ display: flex;
     height: 2px;
   }
 
-
 }
 
 @media screen and (max-width: 1441px) {
-  .contactMe{
-  }
+
   .socialMediaButton{
     width: 162px;
     height: 192px;
   }
+
   .certificates{
     height:80vh;
   }
-  .modal-body{
-    height: 50vh;
-  }
+
   .headerText{
     font-size: 3vw;
   }
 
 }
 
-
-
 @media screen and (max-width: 1241px) {
-  .contactMe{
-  }
+
   .socialMediaButton{
     width: 142px;
     height: 162px;
   }
+
   .certificates{
     height: 70vh;
   }
-  .modal-body{
-    height: 50vh;
-  }
+
 }
 
-
-
 @media screen and (max-width: 1161px) {
+
   .socialMedias{
     width:60px;
   }
+
   .certificates{
     height: 60vh;
   }
-
 
 }
 
 @media screen and (max-width:1025px) {
+
   .certificates{
     height: 60vh;
   }
+
   .headerText{
     font-size:3.5vw ;
   }
+
   .header{
     height: 55px;
   }
+
   .burger-btn{
     width: 20px;
     height: 18px;
     margin-left: 20px;
     position: relative;
     cursor: pointer;
-
   }
 
   .burger-btn:before{
@@ -710,8 +390,6 @@ display: flex;
     height: 2px;
   }
 
-
-
   .burger-btn span{
     position: absolute;
     top:8px;
@@ -719,21 +397,23 @@ display: flex;
     background: #000000;
     height: 2px;
   }
-  .modal-body{
-    height: 40vh;
-  }
+
 }
 
 @media screen and (max-width: 801px) {
+
   .aboutMy{
     font-size: 1rem;
   }
+
   #myInfoBorder{
     height: 15vh;
   }
+
   .shadowText{
     font-size: 6vw;
   }
+
   .certificates{
     height: 60vh;
   }
@@ -741,52 +421,61 @@ display: flex;
 }
 
 @media screen and (max-width: 769px){
-.socialMediaButton{
-  width: 122px;
-  height: 132px;
-}
+
+  .socialMediaButton{
+    width: 122px;
+    height: 132px;
+  }
+
   .socialMedias{
     width:45px;
     height:55px;
   }
+
   .header{
     height: 35px;
   }
+
   .headerText{
     font-size:3.5vw ;
   }
+
   .certificates{
     height: 60vh;
   }
+
   nav{
     height: 35px;
   }
-  .modal-body{
-    height: 40vh;
-  }
+
 }
 
 @media screen and (max-width: 533px) {
+
   .aboutMy{
     font-size: 0.7rem;
   }
+
   #myInfoBorder{
     height: 12vh;
   }
+
   .socialMedias{
     width:30px;
     height:40px;
   }
+
   .header{
     height: 30px;
   }
+
   nav{
     height: 30px;
   }
+
   .certificates{
     height: 25vh;
   }
-
 
 }
 
@@ -801,93 +490,53 @@ display: flex;
     font-size: 2rem;
     width: 40px;
   }
+
   .header{
     height: 25px;
   }
+
   .headerText{
     font-size:4.5vw;
   }
+
   nav{
     height: 25px;
   }
+
   main{
     height: 570px;
   }
+
   .certificates{
     height: 30vh;
   }
-  .position{
-    font-size:3vw;
 
-  }
-
-  .duration{
-    font-size: 2.5vw;
-  }
-
-  .description{
-    font-size: 3vw;
-  }
-
-  .modal-body{
-    padding: 1rem;
-    height:60vh;
-  }
-
-
-  .projectsBtnBlock:nth-child(1) .projectsBtn{
-    font-size: 2vw;
-  }
-
-  .projectsBtnBlock:nth-child(2) .projectsBtn{
-    font-size: 3vw;
-  }
-
-  .projectsBtnBlock:nth-child(1) .projectsBtn:hover{
-    font-size: 2.5vw;
-  }
-
-  .projectsBtnBlock:nth-child(2) .projectsBtn:hover{
-    font-size:3.5vw;
-  }
-
-  .allProjects-body a{
-    font-size: 2.5vw;
-  }
 }
 
 @media screen and (max-width: 376px){
+
   .headerText{
     font-size:5vw;
   }
+
 }
+
 @media screen and (max-width: 321px){
+
   .headerText{
     font-size:5.5vw;
   }
-}
-@media screen and (min-width:767px) and (max-width:4000px)  {
-  .workPlaceNameText{
-    font-size:4vw;
-    color:black;
-    background:-webkit-linear-gradient(135deg,gold,lightgrey,gold,lightgrey,gold,lightgrey,gold);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: text-animation 2s linear infinite ;
-    background-size: 300% 100%;
-    margin: 20px 20px 20px 60px;
-    cursor: pointer;
-  }
+
 }
 
 @media screen and (min-width: 2000px){
+
   .burger-btn{
     width: 35px;
     height:25px;
     margin-left: 20px;
     position: relative;
     cursor: pointer;
-
   }
 
   .burger-btn:before{
@@ -907,6 +556,7 @@ display: flex;
     background: #000000;
     height: 4px;
   }
+
   .burger-btn span{
     position: absolute;
     top:10px;
@@ -914,16 +564,5 @@ display: flex;
     background: #000000;
     height: 4px;
   }
-  .position{
-    font-size:3vw;
 
-  }
-
-  .duration{
-    font-size: 2.5vw;
-  }
-
-  .description{
-    font-size: 2.5vw;
-  }
 }

@@ -11,9 +11,6 @@
     z-index: 4;
 }
 
-
-
-
 .progress-bar{
     display: block;
     height: 100%;
@@ -21,8 +18,8 @@
     background-size: 300% 100%;
     animation: progress-animation 2s linear infinite;
     z-index: 4;
-
 }
+
 @keyframes progress-animation{
     0% {
         background-position: 100%
@@ -40,12 +37,10 @@
     border-radius: 10px;
     bottom: 20px;
     padding-top: 10vw;
-
 }
 
 .slider__wrapper{
     padding: 20px;
-
 }
 
 .slider__items{
@@ -61,7 +56,7 @@
     padding-left: 10px;
     border: 2px solid #ffffff;
     border-radius: 10px;
-    mix-width: 30vw;
+    max-width: 30vw;
     width: 43vw;
 }
 
@@ -70,7 +65,6 @@
     text-decoration-color: #01feff;
     color: #42FFA8;
 }
-
 
 .right-arrow{
     position: absolute;
@@ -84,7 +78,6 @@
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.29);
     border:orange;
-
 }
 
 .left-arrow{
@@ -99,7 +92,6 @@
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.29);
     border:orange;
-
 }
 
 .left-arrow:active{
@@ -108,19 +100,16 @@
 
 .right-arrow:active{
     background: #57ffe3;
-
 }
 
 .left-arrow:hover{
     border:1px solid rgba(255, 255, 255, 0);
-animation: leftwheel;
+    animation: leftwheel;
 }
-
 
 .right-arrow:hover{
     border:1px solid rgba(255, 255, 255, 0);
     animation: rightwheel;
-
 }
 
 .slider{
@@ -130,15 +119,13 @@ animation: leftwheel;
     justify-content: center;
     align-items: center;
     left: 5.5vw;
-width: 40vw;
+    width: 40vw;
     z-index: 3;
-
 }
 
 .slide{
     opacity: 0;
     transition-duration: 1s;
-
 }
 
 .slide.active{
@@ -149,7 +136,6 @@ width: 40vw;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     border: none;
-
 }
 
 .simpleLanguagesBox p{
@@ -161,7 +147,7 @@ width: 40vw;
 }
 
 .professionalLanguagesWay{
-display: flex;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -180,6 +166,7 @@ display: flex;
 }
 
 @media screen and (max-width: 4001px)and( min-width:2301px) {
+
     .left-arrow{
         font-size: 5rem;
     }
@@ -187,9 +174,11 @@ display: flex;
     .right-arrow{
         font-size: 5rem;
     }
+
 }
 
 @media screen and (max-width: 1025px) {
+
     .left-arrow{
         font-size: 2rem;
     }
@@ -197,11 +186,15 @@ display: flex;
     .right-arrow{
         font-size: 2rem;
     }
+
 }
+
 @media screen and (max-width: 769px){
+
     .slider__item{
         width: 55vw;
     }
+
     .left-arrow{
         left:-13.1vw;
     }
@@ -213,6 +206,7 @@ display: flex;
 }
 
 @media screen and (max-width: 426px) {
+
     .left-arrow{
         left:-16.1vw;
     }
@@ -220,4 +214,5 @@ display: flex;
     .right-arrow{
         right:-16.1vw;
     }
+
 }

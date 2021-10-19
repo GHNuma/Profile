@@ -28,7 +28,8 @@ function Courses ()
                 "Marketingcertificate.png",
                 "JavaScriptcertificate.png",
                 "jQuerycertificate.png",
-                "Rcertificate.png"
+                "Rcertificate.png",
+                "Bloombergcertificate.png"
         ];
 
         return (

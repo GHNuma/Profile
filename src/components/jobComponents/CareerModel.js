@@ -1,4 +1,5 @@
 import React from 'react';
+import "./career.css"
 
 function CareerModel({isOpen,setIsOpen,position,duration,description}) {
     return (

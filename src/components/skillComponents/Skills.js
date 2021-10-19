@@ -16,6 +16,9 @@ function Skills({slides})
     if(!Array.isArray(slides) || slides.length<=0){
         return null;
     }
+    //Следует разделить код ещё на компоненты, потому что он слишком большой и несчитаемый в рамках такого проекта.
+    // Как раз можно воспользоваться REDUX для практики и не передавать данные один за другим.
+
     return (
         <section className="slider">
             <button className="left-arrow fas fa-arrow-alt-circle-left" onClick={prevSlide} />

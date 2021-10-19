@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-
+import "./footer.css"
 
 
 function Footer() {
@@ -62,10 +62,6 @@ function handleSearchSubmit(e){
 
     }
 }
-
-
-
-
     return (
 <div>
 
