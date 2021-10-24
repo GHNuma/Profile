@@ -10,7 +10,7 @@ function MyPortfolio({when,...projects}) {
             {projects.list.map((project,index)=>
 
                     <div className="allProjects-body">
-                        <a target="_blank" href={project.info}>{project.name}</a>
+                        <a target="_blank" rel="noreferrer" href={project.info}>{project.name}</a>
 
                     </div>
 
